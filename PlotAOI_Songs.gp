@@ -8,6 +8,7 @@ data_fixationCount = 'M_FixationCountSongs.tsv'
 set grid
 set key right
 set key invert
+set key spacing 1.25
 
 set style data histograms
 set style histogram rowstacked
@@ -15,11 +16,11 @@ set boxwidth 0.5
 set style fill solid 0.5 border lt 0
 
 set xtic (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)
-#set ytic ("0\%%" 0, "10\%%" 10, "20\%%" 20, "30\%%" 30, "40\%%" 40, "50\%%" 50, "60\%%" 60, "70\%%" 70, "80\%%" 80, "90\%%" 90, "100\%%" 100)
+set ytic ("0\%%" 0, "10\%%" 10, "20\%%" 20, "30\%%" 30, "40\%%" 40, "50\%%" 50, "60\%%" 60, "70\%%" 70, "80\%%" 80, "90\%%" 90, "100\%%" 100)
 set yrange [0:125]
 set xrange [0:17]
-set xlabel offset 0,-0.6 "Participant ID" font "Calibri,14"
-set ylabel "Percentage  of  Total  Amount" font "Calibri,14"
+set xlabel offset 0,-0.6 "Participant Rank Based On Notes Hit (Lowest --> Highest)" font "Calibri,14"
+set ylabel "Percentage  of  Total  Relevant Gaze-Time" font "Calibri,14"
 
 set terminal qt size 600,600
 
